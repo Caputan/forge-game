@@ -1,0 +1,8 @@
+.table-item td{
+    border-bottom: solid lightgray 1px;
+}
+
+.table-item_active td{
+    cursor: pointer;
+    border-color: #cc3433;
+}

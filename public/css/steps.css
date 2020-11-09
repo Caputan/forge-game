@@ -1,0 +1,16 @@
+.step {
+    background-color: white;
+}
+
+.step_active {
+    background-color: #686868;
+    color: white;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .step:hover {
+        cursor: pointer;
+        background-color: #686868;
+        color: white;
+    }
+}

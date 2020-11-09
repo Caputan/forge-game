@@ -1,0 +1,99 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Games Antology</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/style.min.css"
+        type="text/css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/steps.css">
+
+    <script src="scripts/onMenuItemClickHandler.js"></script>
+    <script src="scripts/onAimationStepClickHandler.js"></script>
+
+</head>
+
+<body>
+    <div id="viewer"></div>
+    <div id="panel">
+        
+            <!-- <li class="nav-item" role="presentation">
+                <a class="nav-link" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="other"
+                    aria-selected="false">Что-то еще</a>
+            </li> -->
+        </ul>
+
+        <hr>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="catalog" role="tabpanel" aria-labelledby="catalog-tab">
+                <table class="items_table1 table">
+                    <thead>
+                        <tr>
+                            <th>Game</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+            <div class="tab-pane fade" id="animation" role="tabpanel" aria-labelledby="animation-tab">
+                <h3 style="text-align: center;">Инструкция по монтажу</h3>
+                <ol type="1" class="list-group">
+                    <li id="op1" class="list-group-item step" onclick="onAnimationStepClickHandler(sec[1],this)">
+                        Установите ДЕКОРАТИВНЫЕ НАКЛАДКИ на столб</li>
+                    <li id="op2" class="list-group-item step" onclick="onAnimationStepClickHandler(sec[2],this)">
+                        Закрепите СТОЙКУ к столбу саморезами</li>
+                    <li id="op3" class="list-group-item step" onclick="onAnimationStepClickHandler(sec[3],this)">
+                        Начните монтаж ЛАМЕЛЕЙ снизу – вверх</li>
+                    <li id="op4" class="list-group-item step" onclick="onAnimationStepClickHandler(sec[4],this)">
+                        С обратной стороны, до монтажа Крепежной планки 40 закрепите УГОЛ внешний 50*50.
+                    </li>
+                    <li id="op5" class="list-group-item step" onclick="onAnimationStepClickHandler(sec[5],this)">
+                        Для усиления конструкции используйте КРЕПЕЖНУЮ ПЛАНКУ. Она устанавливается с обратной
+                        стороны, на всю высоту ограждения
+                    </li>
+                    <li id="op6" class="list-group-item step" onclick="onAnimationStepClickHandler(sec[6],this)">
+                        Закрепите КРЫШКУ к стойкам или столбам саморезами или вытяжными заклепками.</li>
+                </ol>
+                <br>
+                <div class="alert alert-primary" role="alert">
+                    <p><i>Запустите анимацию с начала, либо выберите этап монтажа, чтобы начать анимацию с него</i>
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">...</div>
+        </div>
+    </div>
+    <!-- Lib Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.min.js"></script>
+
+    <!--  -->
+
+    <!-- My Scripts -->
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/items_table.js"></script>
+    <script src="scripts/stepByStepAnim.js"></script>
+    <!--  -->
+
+</body>
+
+</html>
