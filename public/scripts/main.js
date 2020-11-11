@@ -148,6 +148,7 @@ function onLoadModelError(viewerErrorCode) {
 function onDocumentLoadSuccess(doc) {
     const defaultModel = doc.getRoot().getDefaultGeometry();
     viewer.loadDocumentNode(doc, defaultModel);
+    console.log(NOP_VIEWER);
 }
 
 function onDocumentLoadFailure() {
@@ -164,3 +165,5 @@ function onToolBarCreated() {
 
 
 }
+
+
